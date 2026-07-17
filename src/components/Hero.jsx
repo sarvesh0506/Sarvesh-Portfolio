@@ -57,7 +57,7 @@ export default function Hero() {
           transition={{ duration: 0.6 }}
           className="text-coca-red font-display text-sm md:text-base font-bold tracking-widest uppercase mb-4"
         >
-          Welcome to my portfolio
+          Welcome! I promise my bugs are fewer than my commits
         </motion.p>
 
         {/* Name */}
