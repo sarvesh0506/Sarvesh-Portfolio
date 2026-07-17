@@ -39,7 +39,7 @@ export default function CustomCursor() {
       }}
     >
       <img 
-        src="/coke_cap_cursor.png" 
+        src={`${import.meta.env.BASE_URL}coke_cap_cursor.png`} 
         alt="Coca-Cola Cap Pointer" 
         className="w-full h-full object-contain filter drop-shadow-[0_4px_8px_rgba(0,0,0,0.5)]"
       />
