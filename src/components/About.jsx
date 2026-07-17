@@ -22,10 +22,10 @@ export default function About() {
 
       {/* Scroll Reveal Wrapper */}
       <motion.div
-        initial={{ opacity: 0, scale: 0.92, y: 30 }}
+        initial={{ opacity: 0, scale: 0.84, y: 80 }}
         whileInView={{ opacity: 1, scale: 1, y: 0 }}
-        viewport={{ once: false, margin: "-120px" }}
-        transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+        viewport={{ once: false, margin: "-100px" }}
+        transition={{ duration: 1.0, ease: [0.16, 1, 0.3, 1] }}
       >
         {/* Section Header */}
         <div className="text-center mb-16">
