@@ -15,13 +15,6 @@ export default function Footer() {
           &copy; {new Date().getFullYear()} SARVESHKUMAR S. All rights reserved.
         </div>
 
-        {/* Center: Branding and Made with */}
-        <div className="text-gray-400 text-xs md:text-sm flex items-center justify-center gap-1.5 order-1 md:order-2">
-          Made with <FaHeart className="text-coca-red animate-pulse" /> by{" "}
-          <span className="font-display font-bold text-white hover:text-coca-red transition-colors duration-300">
-            SARVESHKUMAR S
-          </span>
-        </div>
 
         {/* Right Side: Links & Scroll to top */}
         <div className="flex items-center gap-6 order-2 md:order-3">
