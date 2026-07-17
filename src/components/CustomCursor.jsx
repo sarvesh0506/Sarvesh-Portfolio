@@ -30,18 +30,18 @@ export default function CustomCursor() {
 
   return (
     <motion.div
-      className="fixed top-0 left-0 w-14 h-14 pointer-events-none z-[9999]"
+      className="fixed top-0 left-0 w-11 h-11 pointer-events-none z-[9999]"
       style={{
         left: cursorX,
         top: cursorY,
-        translateX: "-15%",
-        translateY: "-15%",
+        translateX: "-50%",
+        translateY: "-50%",
       }}
     >
       <img 
         src="/coke_cap_cursor.png" 
         alt="Coca-Cola Cap Pointer" 
-        className="w-full h-full object-contain filter drop-shadow-[0_3px_8px_rgba(228,30,38,0.4)]"
+        className="w-full h-full object-contain filter drop-shadow-[0_4px_8px_rgba(0,0,0,0.5)]"
       />
     </motion.div>
   );
