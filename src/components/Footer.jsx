@@ -6,6 +6,17 @@ export default function Footer() {
     scroll.scrollToTop({ duration: 500, smooth: true });
   };
 
+  const handleLinkedInClick = (e) => {
+    e.preventDefault();
+    if (window.confirm("Open LinkedIn account?")) {
+      window.open(
+        "https://www.linkedin.com/in/sarveshkumar3005?utm_source=share_via&utm_content=profile&utm_medium=member_ios",
+        "_blank",
+        "noopener,noreferrer"
+      );
+    }
+  };
+
   return (
     <footer className="mt-20 border-t border-white/5 bg-matte-black py-10 px-6">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
@@ -30,9 +41,8 @@ export default function Footer() {
               <FaGithub size={18} />
             </a>
             <a 
-              href="https://linkedin.com/in/sarveshkumar-s-43b44b2aa" 
-              target="_blank" 
-              rel="noopener noreferrer" 
+              href="#" 
+              onClick={handleLinkedInClick} 
               className="text-gray-500 hover:text-white transition-colors duration-300"
               aria-label="LinkedIn Profile"
             >

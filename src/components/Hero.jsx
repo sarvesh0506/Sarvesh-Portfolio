@@ -15,6 +15,17 @@ export default function Hero() {
   const [displayedText, setDisplayedText] = useState("");
   const [isDeleting, setIsDeleting] = useState(false);
 
+  const handleLinkedInClick = (e) => {
+    e.preventDefault();
+    if (window.confirm("Open LinkedIn account?")) {
+      window.open(
+        "https://www.linkedin.com/in/sarveshkumar3005?utm_source=share_via&utm_content=profile&utm_medium=member_ios",
+        "_blank",
+        "noopener,noreferrer"
+      );
+    }
+  };
+
   useEffect(() => {
     let timer;
     const currentFullText = TITLES[titleIndex];
@@ -99,9 +110,8 @@ export default function Hero() {
             <FaGithub />
           </a>
           <a
-            href="https://linkedin.com/in/sarveshkumar-s-43b44b2aa"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="#"
+            onClick={handleLinkedInClick}
             className="text-2xl text-gray-400 hover:text-coca-red hover:scale-115 transition-all duration-300"
             aria-label="LinkedIn"
           >
@@ -165,9 +175,8 @@ export default function Hero() {
           <FaGithub size={18} />
         </a>
         <a
-          href="https://linkedin.com/in/sarveshkumar-s-43b44b2aa"
-          target="_blank"
-          rel="noopener noreferrer"
+          href="#"
+          onClick={handleLinkedInClick}
           className="w-10 h-10 rounded-full flex justify-center items-center border border-white/10 glass-card text-gray-400 hover:text-coca-red hover:border-coca-red transition-all duration-300"
         >
           <FaLinkedin size={18} />
